@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm Install
+RUN npm install
 
 # Copy the code from host to container
 COPY . .
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5173
 
 # Define the command to run app
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
