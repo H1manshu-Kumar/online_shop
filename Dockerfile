@@ -16,5 +16,5 @@ COPY . .
 # Expose the port for running the application
 EXPOSE 5173
 
-# Define the command to run your app
+# Define the command to run app
 CMD ["npm", "start"]
